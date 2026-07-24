@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
+import { Badge } from "../common/Badge";
 import { Container } from "../common/Container";
 import { SectionTitle } from "../common/SectionTitle";
-import { Badge } from "../common/Badge";
 import { experience } from "../../data/experience";
 
 export function Experience() {
@@ -36,9 +36,7 @@ export function Experience() {
                         {job.role}
                       </h3>
 
-                      <p className="mt-1 text-blue-300">
-                        {job.company}
-                      </p>
+                      <p className="mt-1 text-blue-300">{job.company}</p>
                     </div>
 
                     <div className="text-sm text-slate-400 sm:text-right">
@@ -47,12 +45,13 @@ export function Experience() {
                     </div>
                   </div>
 
+                  <p className="mt-6 max-w-4xl leading-7 text-slate-300">
+                    {job.summary}
+                  </p>
+
                   <ul className="mt-7 space-y-3 text-sm leading-7 text-slate-400 sm:text-base">
                     {job.achievements.map((achievement) => (
-                      <li
-                        key={achievement}
-                        className="flex gap-3"
-                      >
+                      <li key={achievement} className="flex gap-3">
                         <span
                           aria-hidden="true"
                           className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400"
@@ -65,9 +64,7 @@ export function Experience() {
 
                   <div className="mt-7 flex flex-wrap gap-2">
                     {job.technologies.map((technology) => (
-                      <Badge key={technology}>
-                        {technology}
-                      </Badge>
+                      <Badge key={technology}>{technology}</Badge>
                     ))}
                   </div>
                 </div>

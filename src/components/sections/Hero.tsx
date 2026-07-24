@@ -1,4 +1,3 @@
-import profilePhoto from "../../assets/images/profile.jpg";
 import { motion } from "framer-motion";
 import {
   FiArrowRight,
@@ -7,15 +6,13 @@ import {
   FiLinkedin,
   FiMail,
 } from "react-icons/fi";
+import profilePhoto from "../../assets/images/profile.jpg";
 import { ButtonLink } from "../common/ButtonLink";
 import { Container } from "../common/Container";
 
 export function Hero() {
   return (
-    <section
-      id="home"
-      className="flex min-h-screen items-center pb-20 pt-32"
-    >
+    <section id="home" className="flex min-h-screen items-center pb-20 pt-32">
       <Container>
         <div className="grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
           <motion.div
@@ -28,16 +25,17 @@ export function Hero() {
             </p>
 
             <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              I build scalable software, data platforms and{" "}
+              Designing scalable backend platforms, AI-powered applications and{" "}
               <span className="text-blue-400">
-                AI-powered systems.
+                enterprise data systems.
               </span>
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-400">
-              Full-stack engineer with 5+ years of experience
-              designing backend systems, cloud applications, ETL
-              pipelines, data platforms and production AI solutions.
+              Senior Software Engineer with 5+ years of experience building
+              cloud-native applications, production AI systems, reporting
+              infrastructure and data pipelines supporting multi-million-dollar
+              operations across Education and Home Services.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -61,29 +59,29 @@ export function Hero() {
                 href="https://github.com/vp1410"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="GitHub profile"
+                aria-label="Vivek Panchal on GitHub"
                 className="transition hover:text-white"
               >
                 <FiGithub />
               </a>
 
               <a
-  href="https://www.linkedin.com/in/vivek-panchal-/"
-  target="_blank"
-  rel="noreferrer"
-  aria-label="Vivek Panchal on LinkedIn"
-  className="transition hover:text-white"
->
-  <FiLinkedin />
-</a>
+                href="https://www.linkedin.com/in/vivek-panchal-/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Vivek Panchal on LinkedIn"
+                className="transition hover:text-white"
+              >
+                <FiLinkedin />
+              </a>
 
-<a
-  href="mailto:vicky.vivek14@gmail.com"
-  aria-label="Email Vivek Panchal"
-  className="transition hover:text-white"
->
-  <FiMail />
-</a>
+              <a
+                href="mailto:vicky.vivek14@gmail.com"
+                aria-label="Email Vivek Panchal"
+                className="transition hover:text-white"
+              >
+                <FiMail />
+              </a>
             </div>
           </motion.div>
 
@@ -99,24 +97,22 @@ export function Hero() {
             <div className="absolute inset-0 rounded-[2rem] bg-blue-500/20 blur-3xl" />
 
             <div className="relative h-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
-  <img
-    src={profilePhoto}
-    alt="Vivek Panchal"
-    className="h-full w-full object-cover object-[center_20%]"
-  />
+              <img
+                src={profilePhoto}
+                alt="Vivek Panchal"
+                className="h-full w-full object-cover object-[center_20%]"
+              />
 
-  <div className="absolute inset-0 bg-gradient-to-t from-[#070b14]/45 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#070b14]/45 via-transparent to-transparent" />
 
-  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-[#070b14]/70 px-5 py-4 backdrop-blur-md">
-    <p className="font-medium text-white">
-      Vivek Panchal
-    </p>
+              <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-[#070b14]/70 px-5 py-4 backdrop-blur-md">
+                <p className="font-medium text-white">Vivek Panchal</p>
 
-    <p className="mt-1 text-sm text-slate-300">
-      Senior Software Engineer
-    </p>
-  </div>
-</div>
+                <p className="mt-1 text-sm text-slate-300">
+                  Senior Software Engineer
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </Container>

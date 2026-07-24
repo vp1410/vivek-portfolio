@@ -3,12 +3,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { Container } from "../common/Container";
 
 const navigation = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
-];
+    { label: "Impact", href: "#impact" },
+    { label: "Projects", href: "#projects" },
+    { label: "Experience", href: "#experience" },
+    { label: "Innovation", href: "#innovation" },
+    { label: "Skills", href: "#skills" },
+  ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
