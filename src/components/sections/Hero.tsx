@@ -45,13 +45,13 @@ export function Hero() {
               </ButtonLink>
 
               <ButtonLink
-                href="/resume.pdf"
-                variant="secondary"
-                download
-              >
-                <FiDownload />
-                Download resume
-              </ButtonLink>
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  variant="secondary"
+  download
+>
+  <FiDownload />
+  Download resume
+</ButtonLink>
             </div>
 
             <div className="mt-9 flex items-center gap-5 text-xl text-slate-400">
