@@ -20,9 +20,20 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <p className="mb-5 font-medium text-blue-400">
-              Senior Software Engineer
-            </p>
+            <a
+  href="#contact"
+  className="mb-7 inline-flex items-center gap-3 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-200 transition hover:border-emerald-300/40 hover:bg-emerald-400/15"
+>
+  <span className="relative flex h-2.5 w-2.5">
+    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-50" />
+    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
+  </span>
+
+  Open to Senior Software Engineer opportunities
+</a>
+<p className="mb-5 font-medium text-blue-400">
+  Backend · Full Stack · AI · Cloud
+</p>
 
             <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
               Designing scalable backend platforms, AI-powered applications and{" "}
