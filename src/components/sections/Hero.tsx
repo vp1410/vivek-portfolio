@@ -1,3 +1,4 @@
+import profilePhoto from "../../assets/images/profile.jpg";
 import { motion } from "framer-motion";
 import {
   FiArrowRight,
@@ -67,22 +68,22 @@ export function Hero() {
               </a>
 
               <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn profile"
-                className="transition hover:text-white"
-              >
-                <FiLinkedin />
-              </a>
+  href="https://www.linkedin.com/in/vivek-panchal-/"
+  target="_blank"
+  rel="noreferrer"
+  aria-label="Vivek Panchal on LinkedIn"
+  className="transition hover:text-white"
+>
+  <FiLinkedin />
+</a>
 
-              <a
-                href="mailto:your-email@example.com"
-                aria-label="Email Vivek Panchal"
-                className="transition hover:text-white"
-              >
-                <FiMail />
-              </a>
+<a
+  href="mailto:vicky.vivek14@gmail.com"
+  aria-label="Email Vivek Panchal"
+  className="transition hover:text-white"
+>
+  <FiMail />
+</a>
             </div>
           </motion.div>
 
@@ -93,21 +94,29 @@ export function Hero() {
               duration: 0.7,
               delay: 0.15,
             }}
-            className="relative mx-auto aspect-square w-full max-w-md"
+            className="relative mx-auto aspect-[4/5] w-full max-w-sm sm:max-w-md"
           >
             <div className="absolute inset-0 rounded-[2rem] bg-blue-500/20 blur-3xl" />
 
-            <div className="relative flex h-full items-center justify-center overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
-              <div className="text-center">
-                <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-blue-400/30 bg-blue-500/10 text-4xl font-semibold text-blue-300">
-                  VP
-                </div>
+            <div className="relative h-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
+  <img
+    src={profilePhoto}
+    alt="Vivek Panchal"
+    className="h-full w-full object-cover object-[center_20%]"
+  />
 
-                <p className="mt-6 text-sm text-slate-400">
-                  Professional photo coming next
-                </p>
-              </div>
-            </div>
+  <div className="absolute inset-0 bg-gradient-to-t from-[#070b14]/45 via-transparent to-transparent" />
+
+  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-[#070b14]/70 px-5 py-4 backdrop-blur-md">
+    <p className="font-medium text-white">
+      Vivek Panchal
+    </p>
+
+    <p className="mt-1 text-sm text-slate-300">
+      Senior Software Engineer
+    </p>
+  </div>
+</div>
           </motion.div>
         </div>
       </Container>
