@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { FiArrowUpRight } from "react-icons/fi";
 import { Badge } from "../common/Badge";
 import { Container } from "../common/Container";
 import { SectionTitle } from "../common/SectionTitle";
@@ -10,7 +9,7 @@ export function Projects() {
     <section id="projects">
       <Container className="py-24">
         <SectionTitle
-          eyebrow="Featured work"
+          eyebrow="Featured Work"
           title="Production systems built for complex business problems."
           description="Selected work spanning AI, backend engineering, data platforms, cloud architecture and enterprise integrations."
         />
@@ -23,22 +22,16 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: index * 0.06 }}
-              className="group flex h-full flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-blue-400/30 hover:bg-white/[0.05]"
+              className="group flex h-full flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-400/30 hover:bg-white/[0.05]"
             >
-              <div className="flex items-start justify-between gap-5">
-                <div>
-                  <p className="text-sm font-medium text-blue-400">
-                    {project.category}
-                  </p>
+              <div>
+                <p className="text-sm font-medium text-blue-400">
+                  {project.category}
+                </p>
 
-                  <h3 className="mt-3 text-2xl font-semibold tracking-tight text-white">
-                    {project.title}
-                  </h3>
-                </div>
-
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 text-slate-400 transition group-hover:border-blue-400/30 group-hover:text-blue-300">
-                  <FiArrowUpRight />
-                </span>
+                <h3 className="mt-3 text-2xl font-semibold tracking-tight text-white">
+                  {project.title}
+                </h3>
               </div>
 
               <p className="mt-5 leading-7 text-slate-400">
@@ -76,3 +69,5 @@ export function Projects() {
     </section>
   );
 }
+
+export default Projects;
